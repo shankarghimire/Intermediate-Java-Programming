@@ -1,22 +1,22 @@
 package com.shankar;
 
 public class Team {
-    private String[] roster;//declare an array for roster
+    private Player[] roster;//declare an array for roster
     private int teamSize; //declare a variable to hold number of player in roster
     public Team(){
-        roster = new String[20]; //create array
+        roster = new Player[20]; //create array
         teamSize = 0; //initialize team size
     }
     public Team(int arraySize)
     {
-        roster = new String[arraySize]; // create array
+        roster = new Player[arraySize]; // create array
         teamSize = 0;     // initialize team size
     }
-    public void addPlayer(String playerName)
+    public void addPlayer(Player player)
     {
         if (teamSize < roster.length)
         {
-            roster[teamSize] = playerName; // add player to roster
+            roster[teamSize] = player; // add player to roster
             teamSize++;                    // increment team size
         }
     }
